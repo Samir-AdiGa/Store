@@ -1,0 +1,219 @@
+body {
+  background-color: #f7fafc;
+}
+/* ========== TopBar ========== */
+.custom-search-group {
+  width: 100%;
+  max-width: 650px;
+  border: 2px solid #e94560;
+  border-radius: 8px;
+  overflow: visible;
+}
+
+.custom-input {
+  border: none;
+  box-shadow: none;
+}
+
+.custom-input:focus {
+  box-shadow: none;
+}
+
+.custom-dropdown {
+  border-left: 2px solid #e94560;
+  border-right: 2px solid #e94560; 
+}
+
+.custom-dropdown .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.custom-search-btn,
+.custom-search-btn:not(:disabled):not(.disabled):active {
+  background-color: #e94560;
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.custom-search-btn:not(:disabled):not(.disabled):active {
+  background-color: #bb334a;
+}
+
+.custom-search-btn:hover {
+  background-color: #d03750;
+}
+
+.icon-label {
+  font-size: 75%;
+  margin-top: 2px;
+}
+
+/* ========== HeroSection ========== */
+/* قائمة التصنيفات */
+.category-list .list-group-item {
+  border: none;
+  border-radius: 6px !important;
+  color: #505050;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.category-list .active-category {
+  background-color: #e3f0ff !important;
+  color: #1c1c1c !important;
+  font-weight: 600;
+}
+
+/* البانر الرئيسي */
+.main-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+  height: 100%;
+}
+
+/* بطاقة المستخدم والزر الوردي */
+.user-card {
+  background-color: #e3f0ff !important;
+}
+
+.bg-pink {
+  background-color: #e94560 !important;
+}
+
+.bg-pink:hover {
+  background-color: #d03750 !important;
+}
+
+.text-pink {
+  color: #e94560 !important;
+}
+
+/* البطاقة البرتقالية */
+.bg-orange {
+  background-color: #f38332 !important;
+}
+
+/* البطاقة الوردية الفاتحة */
+.bg-soft-pink {
+  background-color: #f36582 !important;
+}
+
+.promo-card {
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+}
+/* ==========  ========== */
+
+
+/* توحيد لون النص وإزالة التسطير السفلي */
+.custom-breadcrumb .breadcrumb-item a,
+.custom-breadcrumb .breadcrumb-item.active {
+  color: #8b96a5 !important;
+  text-decoration: none !important;
+}
+
+/* تغيير الفاصل الافتراضي (/) إلى (>) */
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">" !important;
+  color: #8b96a5 !important;
+}
+
+/* ==========  ========== */
+.effect {
+  text-decoration: none;
+  color: #6c757d;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.2s ease;
+}
+
+.effect:hover {
+  color: #e94560;
+  transform: scale(1.1) rotate(3deg);
+  text-shadow: 0 4px 10px rgba(233, 69, 96, 0.3);
+}
+
+
+/* تنسيقات عامة للوضع الداكن */
+[data-bs-theme="dark"] {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+
+/* تحويل البطاقات والخلفيات البيضاء للون غامق في الوضع الداكن */
+[data-bs-theme="dark"] .bg-white {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .border,
+[data-bs-theme="dark"] .border-bottom,
+[data-bs-theme="dark"] .border-top {
+  border-color: #333333 !important;
+}
+
+[data-bs-theme="dark"] .text-dark {
+  color: #f1f1f1 !important;
+}
+
+[data-bs-theme="dark"] .text-secondary,
+[data-bs-theme="dark"] .text-muted {
+  color: #aaaaaa !important;
+}
+
+/* جعل الخلفيات الرمادية الفاتحة (مثل حاويات الصور) غامقة */
+[data-bs-theme="dark"] .bg-light,
+[data-bs-theme="dark"] [style*="background-color: rgb(238, 238, 238)"],
+[data-bs-theme="dark"] [style*="background-color: #EEEEEE"] {
+  background-color: #2a2a2a !important;
+}
+
+/* تطبيق اللون الداكن على الصفحة بالكامل */
+[data-bs-theme="dark"],
+[data-bs-theme="dark"] body {
+  background-color: #121212 !important; /* أو استخدم #1e1e1e حسب الدرجة المفضلة */
+}
+
+/* حل مشكلة الحاويات أو الخلفيات الرمادية المتدرجة */
+[data-bs-theme="dark"] .bg-light,
+[data-bs-theme="dark"] .bg-body-tertiary {
+  background-color: #1a1a1a !important;
+}
+
+
+
+
+
+
+
+/* تأثير الـ Hover لزر اللوجن */
+.custom-login-btn:hover {
+  background-color: #d82348 !important; /* لون أغمق عند التمرير */
+  transform: translateY(-2px); /* رفعة بسيطة لأعلى */
+  box-shadow: 0 6px 15px rgba(248, 59, 98, 0.35); /* ظلال بنفس لون الزر */
+}
+
+.custom-login-btn:active {
+  transform: translateY(0);
+}
+
+
+
+/* التركيز على مربع الإدخال */
+.custom-code-input:focus {
+  border-color: #f83b62 !important;
+  box-shadow: 0 0 0 0.25rem rgba(248, 59, 98, 0.15) !important;
+}
+
+/* تأثير زر Go Back عند الـ Hover */
+.custom-outline-btn:hover {
+  background-color: rgba(248, 59, 98, 0.08) !important;
+  color: #d82348 !important;
+  border-color: #d82348 !important;
+}
